@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/dbradio"
+  android:stretchColumns="4"
+  android:id="@+id/main"> 
+ <TableRow>
+ <!-- 
+  布局的第一行
+ -->
+  <View
+ android:id="@+id/me"
+ android:layout_height="52dip"
+ android:layout_width="12dip"
+ android:layout_column="1"
+ />
+  </TableRow>
+  
+
+   <TableRow>
+  <!-- 布局第二行 -->
+<ImageView
+android:id="@+id/albumImage"
+android:layout_width="100dip"
+android:layout_height="100dip"
+android:layout_centerHorizontal="true"
+android:layout_column="2"
+/>
+<TextView
+android:id="@+id/top_text"
+android:layout_width="145dip"
+android:layout_height="100dip"
+android:layout_column="3"
+android:scrollHorizontally="true"
+android:ellipsize="middle"
+android:padding="2dip"
+/>
+<!-- 布局第二行结束 -->
+  </TableRow>
+
+
+ <TableRow>
+ <!-- 
+  布局的隔行
+ -->
+  <View
+ android:layout_height="4dip"
+ android:layout_width="15dip"
+ android:layout_column="1"
+ />
+  </TableRow>
+  
+<!-- 第三行 -->
+<TableRow>
+<Button
+android:id="@+id/btn_rate"
+android:layout_width="125dip"
+android:layout_height="wrap_content"
+android:text="喜欢这首歌"
+android:layout_column="2"
+>
+</Button>
+<Button
+android:id="@+id/btn_play"
+android:layout_width="125dip"
+android:layout_height="wrap_content"
+android:text="播放下一首"
+android:layout_column="3"
+>
+</Button>
+<!-- 第三行结束 -->
+  </TableRow>
+  
+<TableRow>
+<Button
+android:id="@+id/btn_unlike"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="屏蔽这首歌"
+android:layout_column="2"
+>
+</Button>
+<Button
+android:id="@+id/btn_pause"
+android:layout_width="125dip"
+android:layout_height="wrap_content"
+android:text="暂停播放"
+android:layout_column="3"
+>
+</Button>
+</TableRow>
+<TableRow>
+ <!-- 
+  布局的隔行
+ -->
+  <View
+ android:layout_height="1dip"
+ android:layout_width="15dip"
+ android:layout_column="1"
+ />
+  </TableRow>
+  
+  <View android:layout_height="2px" android:background="#9CCE2E"/>
+ <TableRow>
+ <!-- 
+  布局的隔行
+ -->
+  <View
+ android:layout_height="1dip"
+ android:layout_width="15dip"
+ android:layout_column="1"
+ />
+  </TableRow> 
+  
+  <TableRow>
+<TextView
+android:id="@+id/down_text"
+android:layout_width="125dip"
+android:layout_height="wrap_content"
+android:scrollHorizontally="true"
+android:layout_column="2"
+android:padding="2dip"
+/>
+<ScrollView>
+<TextView
+android:id="@+id/lrc_text"
+android:layout_width="145dip"
+android:layout_height="300dip"
+android:scrollHorizontally="true"
+android:padding="2dip"
+android:layout_column="3"
+android:scrollbars="vertical" 
+android:fadingEdge="vertical" 
+/>
+</ScrollView>
+</TableRow>  
+</TableLayout>

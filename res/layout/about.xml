@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#FFFFFF">
+	<TextView android:id="@+id/yerbabuenatext" 
+		android:text="Developed by Yerbabuena Software"
+		android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:layout_below="@+id/splashscreen"></TextView>
+		<TextView	android:id="@+id/urlyerbabuena" 
+		android:text="http://www.yerbabuenasoftware.com"
+		android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:linksClickable="true"
+		android:autoLink="all"  
+		android:layout_below="@+id/yerbabuenatext"></TextView>
+	
+	<TextView android:id="@+id/about1" 
+		android:text="Chinese translation by "
+		android:layout_marginLeft="30dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:layout_below="@+id/urlyerbabuena"
+		></TextView>
+
+		<TextView android:id="@+id/goapkurl1"
+		android:text="http://goapk.com"
+		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:linksClickable="true"
+		android:autoLink="all"
+		android:layout_toRightOf="@+id/about1"
+		android:layout_below="@+id/urlyerbabuena"
+		></TextView>
+
+	<TextView android:id="@+id/goapk1"
+		android:text="安智网汉化 "
+		android:layout_marginLeft="58dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:layout_below="@+id/about1"></TextView>
+
+		<TextView android:text="http://goapk.com"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/about1"
+		android:layout_toRightOf="@+id/goapk1"
+		android:linksClickable="true"
+		android:autoLink="all"></TextView>
+	
+	<TextView	android:id="@+id/goapk2" 
+		android:layout_marginLeft="58dp"
+		android:text="安智網中文化 "
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:layout_below="@+id/goapk1"></TextView>
+	
+		<TextView android:text="http://goapk.com"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/goapk1"
+		android:layout_toRightOf="@+id/goapk2"
+		android:linksClickable="true"
+		android:autoLink="all"></TextView>
+
+</RelativeLayout>

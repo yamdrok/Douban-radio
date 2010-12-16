@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    
+    <string name="app_name">豆瓣电台TT版</string>
+<string name="db_password">豆瓣密码</string>
+    <string name="db_username">豆瓣账号</string>
+    <string name="auto_login">自动登录</string>
+</resources>

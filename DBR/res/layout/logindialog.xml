@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/picture"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:text="@+string/db_username"
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+           
+    <EditText
+        android:id="@+id/username"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:scrollHorizontally="true"
+        android:capitalize="none"
+        android:gravity="fill_horizontal"
+        android:text="handeng@live.com"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/pword"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:text="@+string/db_password"
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+           
+    <EditText
+        android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:scrollHorizontally="true"
+        android:capitalize="none"
+        android:gravity="fill_horizontal"
+        android:password="true"
+        android:text="handeng8"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<CheckBox
+		android:id="@+id/autologin"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@+string/auto_login"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="20dip"
+		android:layout_marginRight="20dip"
+	/>
+   
+</LinearLayout>
